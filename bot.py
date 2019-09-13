@@ -6,8 +6,9 @@ Created on Fri Sep 13 17:39:36 2019
 """
 
 import telebot
-
-bot = telebot.TeleBot('965155518:AAFcC9dFD3Z3cDJkIaK4rLLa71lkYzHtLcQ')
+import os
+token = os.environ.get('BOT_TOKEN')
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
