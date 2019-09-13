@@ -1,4 +1,2 @@
 pyTelegramAPI
-telebot
-os
 
